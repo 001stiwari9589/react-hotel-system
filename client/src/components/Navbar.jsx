@@ -45,13 +45,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg sticky-top shadow-lg py-1"
+      className="navbar navbar-expand-lg sticky-top shadow-lg py-2.5"
       style={{
         background: "rgba(15, 23, 42, 0.95)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
         borderBottom: "2px solid rgba(255, 193, 7, 0.4)",
         zIndex: 1030,
+        paddingTop: "0.65rem",
+        paddingBottom: "0.65rem",
       }}
     >
       <div className="container">
@@ -143,11 +145,11 @@ const Navbar = () => {
 
             {/* Currency Selector */}
             <li className="nav-item my-1 my-lg-0">
-              <div className="d-inline-flex align-items-center bg-dark bg-opacity-75 text-white rounded-pill px-3 py-1.5 border border-warning border-opacity-50">
-                <FaGlobe className="text-warning me-2 fs-6" />
+              <div className="d-inline-flex align-items-center bg-dark bg-opacity-75 text-white rounded-pill px-2.5 py-1 border border-warning border-opacity-50">
+                <FaGlobe className="text-warning me-1.5 small" />
                 <select
                   className="bg-transparent text-white border-0 fw-bold cursor-pointer"
-                  style={{ outline: "none", fontSize: "0.95rem" }}
+                  style={{ outline: "none", fontSize: "0.85rem" }}
                   value={currency}
                   onChange={handleCurrencyChange}
                 >
@@ -165,7 +167,7 @@ const Navbar = () => {
               <Link
                 className="btn btn-admin-glow px-3 py-1.5 rounded-pill d-inline-flex align-items-center gap-2 text-decoration-none"
                 to="/adminlogin"
-                style={{ fontSize: "0.9rem", whiteSpace: "nowrap" }}
+                style={{ fontSize: "0.85rem", whiteSpace: "nowrap" }}
               >
                 <FaUserShield /> Admin Panel
               </Link>
