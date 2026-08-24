@@ -1,0 +1,255 @@
+/* Modern Custom Styling & Keyframe Animations for Smart Hotel */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Animated Nav Links */
+.custom-nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.35rem 0.55rem !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none !important;
+  letter-spacing: 0.2px;
+  white-space: nowrap !important;
+}
+
+.custom-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffc107, #ff9100);
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
+}
+
+.custom-nav-link:hover {
+  color: #ffc107 !important;
+  transform: translateY(-2px);
+  text-decoration: none !important;
+}
+
+.custom-nav-link:hover::after,
+.custom-nav-link.active-link::after {
+  width: 75%;
+}
+
+.custom-nav-link.active-link {
+  color: #ffc107 !important;
+  text-decoration: none !important;
+}
+
+/* Mobile Responsiveness for Navbar */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-top: 0.75rem;
+    border: 1px solid rgba(255, 193, 7, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .custom-nav-link {
+    font-size: 1.1rem;
+    padding: 0.6rem 0.5rem !important;
+    width: 100%;
+  }
+
+  .custom-nav-link::after {
+    left: 0;
+    transform: none;
+  }
+
+  .custom-nav-link:hover::after,
+  .custom-nav-link.active-link::after {
+    width: 40px;
+  }
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand:active {
+  text-decoration: none !important;
+}
+
+/* Pulse Animation for Booking Badge */
+@keyframes badgePulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(220, 53, 69, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+  }
+}
+
+.pulse-badge {
+  animation: badgePulse 2s infinite;
+}
+
+/* Admin Button Glow Effect */
+.btn-admin-glow {
+  background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%);
+  border: none;
+  color: #0f172a !important;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+  text-decoration: none !important;
+}
+
+.btn-admin-glow:hover,
+.btn-admin-glow:focus,
+.btn-admin-glow:active {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* Hero Section Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* Glassmorphism Card Utility */
+.glass-card {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+}
+
+/* Hero Video Background */
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  background-color: #0f172a;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, rgba(15, 23, 42, 0.45) 100%);
+  z-index: 2;
+}
+
+/* White Force Style Cinematic Video Slideshow Background */
+.hero-slider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.bg-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.4);
+  animation: zoomFade 20s infinite ease-in-out;
+  z-index: 0;
+}
+
+.bg-slide:nth-child(1) { animation-delay: 0s; }
+.bg-slide:nth-child(2) { animation-delay: 4s; }
+.bg-slide:nth-child(3) { animation-delay: 8s; }
+.bg-slide:nth-child(4) { animation-delay: 12s; }
+.bg-slide:nth-child(5) { animation-delay: 16s; }
+
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+  8% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  32% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+/* Print Specific Rules */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .printable-area {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+}

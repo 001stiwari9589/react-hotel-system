@@ -1,0 +1,24 @@
+{
+  "bookings": [
+    {
+      "name": "satyam tiwari ",
+      "email": "001stiwari9589@gmail.com",
+      "phone": "9589015011",
+      "roomType": "Presidential Penthouse",
+      "checkIn": "2026-08-24",
+      "checkOut": "2026-08-25",
+      "guests": 1,
+      "addOns": [],
+      "id": "BK-712335",
+      "subtotal": 5600,
+      "discountAmount": 0,
+      "promoCode": null,
+      "totalBill": 5600,
+      "numberOfNights": 1,
+      "status": "Confirmed",
+      "bookedAt": "24/08/2026",
+      "recordedAt": "2026-08-24T14:28:32.419Z"
+    }
+  ],
+  "vipMembers": []
+}

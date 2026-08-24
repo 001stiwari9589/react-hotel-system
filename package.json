@@ -1,0 +1,11 @@
+{
+  "name": "react-hotel-system-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "node server.js"
+  }
+}
