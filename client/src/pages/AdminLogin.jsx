@@ -13,18 +13,9 @@ const AdminLogin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (
-      username === "Satyam" &&
-      password === "Satyam@123"
-    ) {
-      localStorage.setItem(
-       "adminLogin",
-        JSON.stringify(true)
-
-      );
-
+    if (username === "Admin" && password === "Admin@123") {
+      localStorage.setItem("adminLogin", JSON.stringify(true));
       alert("Login Successful");
-
       navigate("/admin");
     } else {
       alert("Wrong Username or Password");
