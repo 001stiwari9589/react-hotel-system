@@ -145,7 +145,7 @@ const Bill = () => {
             <div className="border-top pt-4 text-center">
               <p className="fw-bold text-dark mb-1">Thank you for choosing Smart Hotel!</p>
               <small className="text-muted">
-                If you have any questions about this invoice, please contact support at support@smarthotel.com
+                If you have any questions about this invoice, please contact support at 001stiwari9589@gmail.com
               </small>
             </div>
           </div>

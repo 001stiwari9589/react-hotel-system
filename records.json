@@ -1,6 +1,29 @@
 {
   "bookings": [
     {
+      "promoCode": "VIP10",
+      "id": "BK-884920",
+      "roomType": "Luxury Royal Suite",
+      "checkIn": "2026-10-28",
+      "checkOut": "2026-10-31",
+      "subtotal": 15000,
+      "guests": 2,
+      "addOns": [
+        "Breakfast Package",
+        "Extra Bed",
+        "Airport Pickup"
+      ],
+      "totalBill": 13500,
+      "name": "Satyam Tiwari",
+      "discountAmount": 1500,
+      "status": "Confirmed",
+      "bookedAt": "28/10/2026",
+      "phone": "9589018011",
+      "numberOfNights": 3,
+      "email": "001stiwari9589@gmail.com",
+      "recordedAt": "2026-10-27T18:57:14.810Z"
+    },
+    {
       "name": "satyam tiwari ",
       "email": "001stiwari9589@gmail.com",
       "phone": "9589015011",

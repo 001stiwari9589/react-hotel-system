@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import HotelLogo from "../components/HotelLogo";
 import AddRoomModal from "../components/AddRoomModal";
-import { FaBed, FaDollarSign, FaCalendarCheck, FaPlus, FaSearch, FaTrashAlt, FaSignOutAlt, FaTag, FaStar, FaCommentDots, FaCheck, FaTimes } from "react-icons/fa";
+import { FaBed, FaDollarSign, FaCalendarCheck, FaPlus, FaSearch, FaTrashAlt, FaSignOutAlt, FaTag, FaStar, FaCommentDots, FaCheck, FaTimes, FaEnvelope } from "react-icons/fa";
 import { formatCurrency, getSelectedCurrency } from "../utils/currency";
 import { getPromoCodes, addPromoCode, deletePromoCode } from "../utils/promoCodes";
 import { getReviews, deleteReview } from "../utils/reviews";
@@ -131,6 +131,15 @@ const Admin = () => {
         </div>
 
         <div className="d-flex gap-2">
+          <a
+            href="/api/latest-email"
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline-warning d-flex align-items-center gap-2 shadow-sm"
+            title="View the latest booking notification email dispatched to 001stiwari9589@gmail.com"
+          >
+            <FaEnvelope /> View Email Alert
+          </a>
           <button
             className="btn btn-success d-flex align-items-center gap-2 shadow-sm"
             onClick={() => setShowAddRoomModal(true)}

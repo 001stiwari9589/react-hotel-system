@@ -67,7 +67,7 @@ const Footer = () => {
             </p>
 
             <p className="small mb-3 text-light opacity-75">
-              <FaEnvelope className="text-warning me-2" /> smarthotel@gmail.com
+              <FaEnvelope className="text-warning me-2" /> 001stiwari9589@gmail.com
             </p>
 
             {/* Social Icons */}
