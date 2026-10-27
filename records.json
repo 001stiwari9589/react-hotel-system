@@ -1,6 +1,25 @@
 {
   "bookings": [
     {
+      "name": "satyam tiwari",
+      "email": "001stiwari9589@gmail.com",
+      "phone": "9589018011",
+      "roomType": "Presidential Penthouse",
+      "checkIn": "2026-10-27",
+      "checkOut": "2026-10-28",
+      "guests": 1,
+      "addOns": [],
+      "id": "BK-949130",
+      "subtotal": 5600,
+      "discountAmount": 0,
+      "promoCode": null,
+      "totalBill": 5600,
+      "numberOfNights": 1,
+      "status": "Confirmed",
+      "bookedAt": "28/10/2026",
+      "recordedAt": "2026-10-27T19:05:49.228Z"
+    },
+    {
       "promoCode": "VIP10",
       "id": "BK-884920",
       "roomType": "Luxury Royal Suite",

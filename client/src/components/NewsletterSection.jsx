@@ -48,23 +48,36 @@ const NewsletterSection = () => {
               <FaCheckCircle className="fs-5" /> Thank you for subscribing! Your 10% discount promo code has been sent to your inbox.
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="row justify-content-center g-2 max-w-600 mx-auto">
-              <div className="col-sm-8">
+            <form onSubmit={handleSubmit} className="mx-auto" style={{ maxWidth: "580px" }}>
+              <div className="d-flex flex-column flex-sm-row align-items-stretch gap-2">
                 <input
                   type="email"
                   required
                   placeholder="Enter your email address..."
-                  className="form-control form-control-lg border-secondary text-white rounded-pill px-4 shadow-sm"
-                  style={{ backgroundColor: "rgba(30, 41, 59, 0.9)", fontSize: "1rem" }}
+                  className="form-control form-control-lg text-white rounded-pill px-4 shadow-sm flex-grow-1"
+                  style={{
+                    backgroundColor: "rgba(30, 41, 59, 0.9)",
+                    border: "1.5px solid rgba(245, 158, 11, 0.35)",
+                    fontSize: "1rem",
+                    minHeight: "52px",
+                  }}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-              </div>
-              <div className="col-sm-4">
                 <button
                   type="submit"
-                  className="btn btn-warning btn-lg w-100 fw-bold rounded-pill px-4 shadow d-flex align-items-center justify-content-center gap-2 hover-scale"
-                  style={{ fontSize: "1rem" }}
+                  className="btn btn-warning btn-lg fw-bold rounded-pill px-4 shadow d-inline-flex align-items-center justify-content-center gap-2 hover-scale flex-shrink-0"
+                  style={{
+                    fontSize: "1rem",
+                    minHeight: "52px",
+                    whiteSpace: "nowrap",
+                    backgroundColor: "#f59e0b",
+                    borderColor: "#f59e0b",
+                    color: "#0f172a",
+                    fontWeight: 800,
+                    boxShadow: "0 4px 14px rgba(245, 158, 11, 0.4)",
+                    cursor: "pointer",
+                  }}
                 >
                   <FaPaperPlane /> Join VIP
                 </button>
